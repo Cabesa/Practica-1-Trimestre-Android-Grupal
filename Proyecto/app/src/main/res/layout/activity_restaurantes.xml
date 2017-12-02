@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoprueba"
+    tools:context="com.example.aleja.proyecto.Restaurantes">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:id="@+id/rdgProvincias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/spinRestaurantes"
+            android:onClick="pulsarRadioButtons">
+
+            <TextView
+                android:id="@+id/txtProvincia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/elegProvincia" />
+
+            <RadioButton
+                android:id="@+id/rdbSevilla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/rdbSevilla"
+                android:onClick="pulsarRadioButtons"/>
+
+            <RadioButton
+                android:id="@+id/rdbMalaga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/rdbMalaga"
+                android:onClick="pulsarRadioButtons"/>
+
+            <TextView
+                android:id="@+id/txtElegirRestaurante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/elegRestaurante" />
+
+            <Spinner
+                android:id="@+id/spinRestaurantes"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight="1" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/imgCentral"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/rdgProvincias"
+            app:srcCompat="@drawable/restaurante_exterior" />
+
+        <Button
+            android:id="@+id/btnFotos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="32dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginStart="26dp"
+            android:background="@drawable/buttonshape"
+            android:onClick="pulsarFotos"
+            android:shadowColor="#000000"
+            android:shadowDx="-3"
+            android:shadowDy="-2"
+            android:shadowRadius="9"
+            android:text="@string/btnFotos"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnProductos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnFotos"
+            android:layout_alignBottom="@+id/btnFotos"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/btnFotos"
+            android:layout_toRightOf="@+id/btnFotos"
+            android:background="@drawable/buttonshape"
+            android:onClick="pulsarProductos"
+            android:shadowColor="#000000"
+            android:shadowDx="-3"
+            android:shadowDy="-2"
+            android:shadowRadius="9"
+            android:text="@string/btnProductos"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

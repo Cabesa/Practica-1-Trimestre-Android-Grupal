@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoprueba"
+    tools:context="com.example.aleja.proyecto.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/txtBienvenida"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="51dp"
+            android:autoText="false"
+            android:fontFamily="monospace"
+            android:text="@string/bienvenida" />
+
+        <ImageView
+            android:id="@+id/imgBienvenido"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@+id/txtBienvenida"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/restaurante_exterior" />
+
+        <Button
+            android:id="@+id/btnEntrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgBienvenido"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/buttonshape"
+            android:onClick="pulsarEntrar"
+            android:shadowColor="#000000"
+            android:shadowDx="-3"
+            android:shadowDy="-2"
+            android:shadowRadius="9"
+            android:text="@string/btnEntrar"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

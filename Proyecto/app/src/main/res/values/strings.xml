@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Restaurante McStudium King</string>
+    <string name="bienvenida">Bienvenido a la aplicación de McStudium King</string>
+    <string name="btnEntrar">Entrar</string>
+    <string name="btnFotos">Fotos</string>
+    <string name="btnProductos">Productos</string>
+    <string name="elegProvincia">Elija una provincia:</string>
+    <string name="elegRestaurante">¿Qué restaurante desea visitar?</string>
+    <string name="rdbSevilla">Sevilla</string>
+    <string name="rdbMalaga">Málaga</string>
+
+    <string-array name="sevillaLista">
+        <item>Centro</item>
+        <item>Alcalá de Guadaira</item>
+
+
+    </string-array>
+
+    <string-array name="malagaLista">
+        <item>Marbella</item>
+
+
+
+    </string-array>
+
+    <string-array name="opcionesLista">
+        <item>Hamburguesa completa</item>
+        <item>Raviolis de queso</item>
+        <item>Pizza Margarita</item>
+
+    </string-array>
+    <string-array name="descripcionesLista">
+        <item>100% vacuno</item>
+        <item>Queso de cabra</item>
+        <item>Extra de queso</item>
+
+    </string-array>
+
+    <string-array name="descripcionesLargas">
+        <item>Hamburguesa 100% vacuno, pan recién horneado, y ríquisima salsa mostaza.</item>
+        <item>Raviolis al dente con mantequilla, relleno de queso de cabra. Salsa al gusto.</item>
+        <item>Pizza margarita con tomate de la huerta, y queso cortado con mucha delicadeza.</item>
+
+    </string-array>
+
+    <string-array name="ingredientes">
+        <item> - Pan recién horneado.\n- Queso Cheddar.\n- Lechuga batavia.\n- Tomate.\n- Salsa Mostaza.</item>
+        <item> - Raviolis.\n- Queso de Cabra.\n- Mantequilla.\n- Salsa Pesto.</item>
+        <item> - Masa de Pizza.\n-Queso Mozarella.\n- Tomate triturado.\n- Aceite de Oliva.\n</item>
+
+    </string-array>
+
+    <string name="receta">Hamburguesa Completa</string>
+</resources>
